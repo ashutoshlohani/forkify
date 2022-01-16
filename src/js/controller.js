@@ -118,7 +118,12 @@ const controlAddRecipe = async function (newRecipe) {
   }
 };
 
-const init = function () {
+const printName = function print(name) {
+  console.log(name);
+};
+printName('Ashu');
+
+function init() {
   bookmarksView.addHandlerRender(controlBookmarks);
   recipeView.addHandlerRender(controlRecipes);
   recipeView.addHandlerUpdateServings(controlServings);
@@ -126,5 +131,5 @@ const init = function () {
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-};
+}
 init();

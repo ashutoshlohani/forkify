@@ -126,11 +126,5 @@ const init = function () {
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-<<<<<<< HEAD
-  console.log('master');
-=======
-
-  console.log('branch');
->>>>>>> new-feature
 };
 init();
